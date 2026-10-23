@@ -1,0 +1,33 @@
+{
+  "name": "Bé Vui Học — Học mà chơi",
+  "short_name": "Bé Vui Học",
+  "description": "Ứng dụng học miễn phí cho bé 3–6 tuổi: học chữ, ghép vần, tập viết, học số, tiếng Anh và trò chơi trí nhớ.",
+  "lang": "vi",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#c2efec",
+  "theme_color": "#17b39d",
+  "categories": ["education", "kids"],
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

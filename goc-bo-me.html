@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Góc bố mẹ: tiến trình học của bé | Bé Vui Học</title>
+<meta name="description" content="Xem số sao, số câu đúng, tỉ lệ chính xác và số chữ bé đã luyện. Dữ liệu chỉ lưu trên thiết bị, không cần tài khoản.">
+<meta name="theme-color" content="#17b39d">
+<link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/icon-192.png" sizes="192x192" type="image/png">
+<link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+
+<div class="sky" aria-hidden="true">
+  <i class="cloud c1"></i>
+  <i class="cloud c2"></i>
+  <i class="cloud c3"></i>
+</div>
+
+<header class="site-head">
+  <a class="brand" href="index.html">
+    <img src="assets/img/logo-mark.svg" alt="">
+    Bé Vui Học
+  </a>
+  <nav class="site-nav" aria-label="Danh mục">
+    <a href="index.html">Trang chủ</a>
+    <a href="bai-hoc-cho-be.html">Bài học</a>
+    <a href="tieng-viet.html">Tiếng Việt</a>
+    <a href="toan.html">Toán</a>
+    <a href="tieng-anh.html">Tiếng Anh</a>
+    <a href="tro-choi-cho-be.html">Trò chơi</a>
+    <a href="goc-bo-me.html" aria-current="page">Góc bố mẹ</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <section class="hero-card">
+    <span class="badge">👨‍👩‍👧 Dành cho bố mẹ</span>
+    <h1>Góc bố mẹ</h1>
+    <p class="lead">
+      Theo dõi tiến trình của bé trong vài giây: số sao, số câu đã làm, tỉ lệ đúng và
+      những chữ bé đã tập viết. Tất cả nằm ngay trên thiết bị này, không cần đăng ký.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" href="index.html#bat-dau">▶ Học cùng bé</a>
+      <a class="btn ghost" href="bai-hoc-cho-be.html">Xem danh sách bài học</a>
+    </div>
+  </section>
+
+  <section class="block" id="tien-trinh">
+    <div class="block-head">
+      <h2>Tiến trình của bé</h2>
+      <p id="updatedAt">Chưa có dữ liệu</p>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat">
+        <span class="ico" aria-hidden="true">⭐</span>
+        <strong id="statStars">0</strong>
+        <span>Sao đã nhận</span>
+      </div>
+      <div class="stat tone-green">
+        <span class="ico" aria-hidden="true">✅</span>
+        <strong id="statPlays">0</strong>
+        <span>Câu đã trả lời</span>
+      </div>
+      <div class="stat tone-yellow">
+        <span class="ico" aria-hidden="true">🎯</span>
+        <strong id="statAccuracy">0%</strong>
+        <span>Tỉ lệ đúng</span>
+      </div>
+      <div class="stat tone-pink">
+        <span class="ico" aria-hidden="true">✏️</span>
+        <strong id="statLetters">0</strong>
+        <span>Chữ đã luyện</span>
+      </div>
+    </div>
+
+    <div class="progress-list" id="progressList" aria-live="polite"></div>
+    <p class="empty-state" id="emptyState" hidden>
+      Bé chưa làm bài nào. Hãy mở <a href="index.html#bat-dau">Khu học &amp; chơi</a> để bắt đầu —
+      số liệu sẽ hiện ở đây sau vài câu đầu tiên.
+    </p>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Quản lý dữ liệu</h2>
+      <p>Chỉ trên thiết bị này</p>
+    </div>
+    <div class="panel">
+      <p>
+        Bé Vui Học không có máy chủ tài khoản và không gửi dữ liệu đi đâu. Tiến trình được lưu
+        trong bộ nhớ trình duyệt (localStorage). Xoá dữ liệu trình duyệt hoặc dùng chế độ ẩn danh
+        sẽ làm mất số liệu này.
+      </p>
+      <div class="panel-actions">
+        <button class="btn ghost" type="button" id="resetBtn">🗑️ Xoá toàn bộ tiến trình</button>
+        <a class="btn ghost" href="about.html">Tìm hiểu về Bé Vui Học</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>5 phút mỗi ngày, hiệu quả bền vững</h2>
+    <p>
+      Trẻ 3–6 tuổi học tốt nhất khi buổi học ngắn và lặp lại đều đặn. Hãy chọn một hoạt động,
+      ngồi cùng bé, nghe bé đọc to rồi dừng khi bé còn hứng thú. Tỉ lệ đúng chưa cần cao —
+      điều quan trọng là bé dám thử và biết thử lại.
+    </p>
+    <p>
+      Nếu bé hay nhầm một mục, hãy quay lại mục đó vào hôm sau thay vì luyện tiếp ngay.
+      Với phần <strong>tập viết</strong>, bố mẹ có thể hướng dẫn bé đồ chậm từng nét và
+      nhấc tay giữa các nét.
+    </p>
+    <p class="note">
+      <strong>Gợi ý:</strong> đặt giới hạn thời gian màn hình 10–15 phút mỗi lần và luôn
+      học cùng bé ở độ tuổi này.
+    </p>
+    <div class="pill-links">
+      <a href="bai-hoc-cho-be.html">→ Toàn bộ bài học</a>
+      <a href="tieng-viet.html">→ Tiếng Việt</a>
+      <a href="toan.html">→ Toán</a>
+      <a href="tieng-anh.html">→ Tiếng Anh</a>
+    </div>
+  </section>
+
+  <footer class="site-foot">
+    <div class="foot-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="bai-hoc-cho-be.html">Bài học</a>
+      <a href="goc-bo-me.html">Góc bố mẹ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="about.html#share">Chia sẻ</a>
+    </div>
+    <p>Bé Vui Học · Học miễn phí cho bé 3–6 tuổi · Không cần tài khoản.</p>
+  </footer>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/progress.js"></script>
+<script src="assets/js/site.js"></script>
+<script>
+  (function () {
+    var P = window.VHHV_PROGRESS;
+    if (!P) return;
+
+    var list = document.getElementById("progressList");
+    var empty = document.getElementById("emptyState");
+    var updatedAt = document.getElementById("updatedAt");
+
+    function formatDate(ts) {
+      if (!ts) return "";
+      try {
+        return new Date(ts).toLocaleString("vi-VN", {
+          day: "2-digit", month: "2-digit", year: "numeric",
+          hour: "2-digit", minute: "2-digit"
+        });
+      } catch (e) {
+        return "";
+      }
+    }
+
+    function render() {
+      var s = P.summary();
+      document.getElementById("statStars").textContent = s.stars;
+      document.getElementById("statPlays").textContent = s.plays;
+      document.getElementById("statAccuracy").textContent = s.accuracy + "%";
+      document.getElementById("statLetters").textContent = s.letters + "/29";
+
+      updatedAt.textContent = s.lastAt
+        ? "Cập nhật: " + formatDate(s.lastAt)
+        : "Chưa có dữ liệu";
+
+      var active = s.rows.filter(function (row) { return row.plays > 0; });
+      empty.hidden = active.length > 0;
+
+      list.innerHTML = active
+        .map(function (row) {
+          return (
+            '<div class="progress-row">' +
+              '<div class="progress-top"><strong>' + row.name + "</strong>" +
+                '<span>' + row.correct + " đúng / " + row.plays + " câu</span></div>" +
+              '<div class="bar" role="img" aria-label="' + row.name + " đúng " + row.accuracy + '%"><span style="width:' + row.accuracy + '%"></span></div>' +
+            "</div>"
+          );
+        })
+        .join("");
+    }
+
+    var resetBtn = document.getElementById("resetBtn");
+    resetBtn.addEventListener("click", function () {
+      var ok = window.confirm("Xoá toàn bộ số sao và tiến trình học trên thiết bị này?");
+      if (!ok) return;
+      P.reset();
+      render();
+      if (window.VHHV_SITE) window.VHHV_SITE.toast("Đã xoá tiến trình trên thiết bị.");
+    });
+
+    render();
+  })();
+</script>
+</body>
+</html>

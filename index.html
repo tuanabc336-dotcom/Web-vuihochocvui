@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bé Vui Học — Học miễn phí cho bé 3–6 tuổi</title>
+<meta name="description" content="Bé Vui Học: ứng dụng học miễn phí cho bé 3–6 tuổi. Khám phá chữ cái, ghép vần, toán, tiếng Anh và trò chơi tư duy. Không cần tài khoản.">
+<meta name="theme-color" content="#17b39d">
+<meta property="og:title" content="Bé Vui Học — Học miễn phí cho bé 3–6 tuổi">
+<meta property="og:description" content="Ứng dụng học miễn phí cho bé 3–6 tuổi: học chữ, học số và trò chơi tư duy.">
+<meta property="og:image" content="assets/img/share-vui-hoc.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/games.css">
+</head>
+<body class="home">
+
+<div class="sky" aria-hidden="true">
+  <i class="cloud c1"></i>
+  <i class="cloud c2"></i>
+  <i class="cloud c3"></i>
+</div>
+
+<main id="app">
+  <section class="screen start" id="welcome" aria-label="Bé Vui Học">
+
+    <div class="welcome-tools">
+      <button class="install-app-button" type="button" id="installBtn" data-i18n="install">📲 Thêm app cho bé</button>
+      <details class="language-picker" id="langPicker">
+        <summary aria-label="Ngôn ngữ: Tiếng Việt">
+          <span class="language-flag flag-vi" id="langFlag" aria-hidden="true"></span>
+          <span id="langCode">VI</span>
+          <span class="language-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="language-options" role="group" aria-label="Ngôn ngữ">
+          <button type="button" lang="vi" aria-pressed="true"><span class="language-flag flag-vi" aria-hidden="true"></span>Tiếng Việt<span class="language-check" aria-hidden="true">✓</span></button>
+          <button type="button" lang="en" aria-pressed="false"><span class="language-flag flag-en" aria-hidden="true"></span>English<span class="language-check" aria-hidden="true"></span></button>
+          <button type="button" lang="ja" aria-pressed="false"><span class="language-flag flag-ja" aria-hidden="true"></span>日本語<span class="language-check" aria-hidden="true"></span></button>
+          <button type="button" lang="ko" aria-pressed="false"><span class="language-flag flag-ko" aria-hidden="true"></span>한국어<span class="language-check" aria-hidden="true"></span></button>
+          <button type="button" lang="zh-Hans" aria-pressed="false"><span class="language-flag flag-zh" aria-hidden="true"></span>简体中文<span class="language-check" aria-hidden="true"></span></button>
+        </div>
+      </details>
+    </div>
+
+    <div class="welcome-sun" aria-hidden="true">
+      <img src="assets/img/welcome-sun-3d.webp" alt="" draggable="false">
+    </div>
+    <div class="welcome-cloud welcome-cloud-left" aria-hidden="true"></div>
+    <div class="welcome-cloud welcome-cloud-right" aria-hidden="true"></div>
+
+    <div class="parade" aria-hidden="true">
+      <div class="welcome-friend" style="--delay: 0s; --friend-position: 0%;"></div>
+      <div class="welcome-friend" style="--delay: -0.6s; --friend-position: 33.3333%;"></div>
+      <div class="welcome-friend" style="--delay: -1.2s; --friend-position: 66.6667%;"></div>
+      <div class="welcome-friend" style="--delay: -1.8s; --friend-position: 100%;"></div>
+    </div>
+
+    <h1 class="logo welcome-art-logo" aria-label="Bé Vui Học">
+      <span class="seo-brand-text">Bé Vui Học</span>
+      <span class="brand-lockup" aria-hidden="true">
+        <img class="brand-mark" src="assets/img/logo-mark.svg" alt="" draggable="false">
+        <span class="brand-word"><span class="w1">Bé</span><span class="w2">Vui</span><span class="w3">Học</span></span>
+      </span>
+    </h1>
+
+    <p class="tagline" data-i18n="tagline">Học mà chơi</p>
+
+    <div class="welcome-topics">
+      <a class="welcome-topic" href="tieng-viet.html">
+        <img src="assets/img/input-latin-letters.webp" alt="" draggable="false">
+        <span data-i18n="letters">Học chữ</span>
+      </a>
+      <a class="welcome-topic" href="toan.html">
+        <img src="assets/img/input-numbers.webp" alt="" draggable="false">
+        <span data-i18n="numbers">Học số</span>
+      </a>
+      <a class="welcome-topic" href="tro-choi-cho-be.html">
+        <img src="assets/img/video-game.webp" alt="" draggable="false">
+        <span data-i18n="games">Trò chơi</span>
+      </a>
+    </div>
+
+    <button class="btn big" type="button" id="startBtn" data-i18n="start">▶ Bắt đầu</button>
+
+    <nav class="startlinks" aria-label="Thông tin ứng dụng">
+      <a href="about.html">
+        <img src="assets/img/open-book.webp" alt="" draggable="false">
+        <span data-i18n="about">Giới thiệu</span>
+      </a>
+      <a href="about.html#share">
+        <img src="assets/img/trophy.webp" alt="" draggable="false">
+        <span data-i18n="share">Chia sẻ</span>
+      </a>
+      <a href="#support" id="supportLink">
+        <img src="assets/img/red-heart.webp" alt="" draggable="false">
+        <span data-i18n="support">Ủng hộ</span>
+      </a>
+    </nav>
+
+    <p class="mutehint" data-i18n="hint">Miễn phí · Không cần tài khoản</p>
+  </section>
+</main>
+
+<!-- Khu vui chơi -->
+<div class="app-overlay" id="appOverlay" role="dialog" aria-modal="true" aria-label="Khu vui chơi" hidden>
+  <div class="app-bar">
+    <button class="round-btn" type="button" id="appBack" aria-label="Quay lại">←</button>
+    <h2 id="appTitle">Khu vui chơi</h2>
+    <div class="spacer"></div>
+    <div class="star-counter" title="Số sao bé đã nhận"><span class="ico" aria-hidden="true">⭐</span><span id="starCount">0</span></div>
+    <a class="round-btn" href="goc-bo-me.html" title="Góc bố mẹ" aria-label="Góc bố mẹ">👪</a>
+    <button class="round-btn" type="button" id="appClose" aria-label="Đóng">✕</button>
+  </div>
+  <div class="app-main" id="appMain"></div>
+</div>
+
+<div class="reward" id="reward" hidden>
+  <div class="box" role="status">
+    <div class="confetti" id="rewardEmoji">🎉</div>
+    <h3 id="rewardTitle">Giỏi quá!</h3>
+    <p id="rewardText">Bé được thêm một ngôi sao.</p>
+    <button class="btn" type="button" id="rewardBtn">Tiếp tục</button>
+  </div>
+</div>
+
+<!-- Hộp thoại thêm app -->
+<dialog id="installDialog">
+  <div class="dialog-body" style="position:relative">
+    <button class="dialog-close" type="button" data-close aria-label="Đóng">✕</button>
+    <div class="dialog-emoji" aria-hidden="true">📲</div>
+    <h2>Thêm app cho bé</h2>
+    <p>Trên điện thoại, mở menu của trình duyệt rồi chọn <strong>“Thêm vào màn hình chính”</strong>. Trên máy tính, bấm biểu tượng <strong>cài đặt</strong> ở thanh địa chỉ. Bé sẽ mở được ngay như một ứng dụng.</p>
+    <div class="dialog-actions">
+      <button class="btn ghost" type="button" data-close>Đã hiểu</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- Hộp thoại ủng hộ -->
+<dialog id="supportDialog">
+  <div class="dialog-body" style="position:relative">
+    <button class="dialog-close" type="button" data-close aria-label="Đóng">✕</button>
+    <div class="dialog-emoji" aria-hidden="true">💛</div>
+    <h2>Cảm ơn bạn rất nhiều</h2>
+    <p>Bé Vui Học luôn miễn phí cho mọi bé. Nếu bạn thấy hữu ích, hãy gửi trang này cho một phụ huynh khác — đó là cách ủng hộ lớn nhất.</p>
+    <div class="dialog-actions">
+      <button class="btn" type="button" id="shareNowBtn">🔗 Chia sẻ trang</button>
+      <button class="btn ghost" type="button" data-close>Đóng</button>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/lang.js"></script>
+<script src="assets/js/progress.js"></script>
+<script src="assets/js/games.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

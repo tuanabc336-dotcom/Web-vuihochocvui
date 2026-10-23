@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Test harness</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #fff; }
+  iframe { display: block; border: 0; width: 100vw; height: 100vh; }
+</style>
+</head>
+<body>
+<iframe id="frame" src="index.html"></iframe>
+<script>
+  var params = new URLSearchParams(location.search);
+  var game = params.get("g") || "";
+  var frame = document.getElementById("frame");
+  frame.addEventListener("load", function () {
+    var win = frame.contentWindow;
+    try {
+      if (game) win.VHHV_GAMES.openGame(game);
+      else win.VHHV_GAMES.open();
+    } catch (e) {
+      document.title = "HARNESS ERROR: " + e.message;
+    }
+  });
+</script>
+</body>
+</html>
